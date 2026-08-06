@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ari-bench"
+version = "1.0.0"
+description = "Adversarial Robustness Index (ARI-bench): Release-day auditable safety benchmark for frontier LLMs & AI agents"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "ARI-bench Contributors" }
+]
+keywords = ["ai-safety", "red-teaming", "llm-benchmark", "adversarial-robustness", "steganography", "alignment-faking"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "pydantic>=2.0.0",
+    "click>=8.0.0",
+    "requests>=2.28.0",
+    "jinja2>=3.0.0",
+    "numpy>=1.20.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0"
+]
+
+[project.scripts]
+ari-bench = "ari_bench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ari_bench*"]
