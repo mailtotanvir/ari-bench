@@ -1,4 +1,4 @@
-title: "Why I Built ARI-bench: Auditing Frontier LLM Robustness Before Production Deployment"
+title: "ARI-bench"
 description: "Why flagship LLMs fail Day-0 safety tests by Day-5, how ARI-bench operationalizes Google's ASAT roadmap, and how CISOs and developers can audit model robustness before production deployment."
 theme: minima
 plugins:
@@ -7,6 +7,22 @@ plugins:
 
 url: "https://mailtotanvir.github.io"
 baseurl: "/ari-bench"
+
+# Do not include any pages in the header navigation menu
+header_pages: []
+
+# Exclude repository files from Jekyll site generation
+exclude:
+  - docs/
+  - tests/
+  - ari_bench/
+  - _posts/
+  - "*.json"
+  - "*_SCORECARD.md"
+  - "SCORECARD.md"
+  - "pyproject.toml"
+  - "LICENSE"
+  - "ari-bench spec and context.md"
 
 permalink: /:title/
 markdown: kramdown
