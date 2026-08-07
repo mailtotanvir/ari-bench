@@ -1,4 +1,4 @@
-# ARI-bench Evaluation Tracks & Technical Specifications
+# ARI-bench Evaluation Tracks and Technical Specifications
 
 ## 1. Executive Summary & Taxonomy Grounding
 

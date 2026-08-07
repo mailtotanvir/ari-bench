@@ -1,17 +1,13 @@
-title: ARI-bench
-description: Adversarial Robustness Index Benchmark Suite & Research Log
+title: "Why I Built ARI-bench: Auditing Frontier LLM Robustness Before Production Deployment"
+description: "Why flagship LLMs fail Day-0 safety tests by Day-5, how ARI-bench operationalizes Google's ASAT roadmap, and how CISOs and developers can audit model robustness before production deployment."
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# GitHub Pages configuration
 url: "https://mailtotanvir.github.io"
 baseurl: "/ari-bench"
 
-header_pages:
-  - index.md
-  - docs/EVALUATION_TRACKS.md
-
+permalink: /:title/
 markdown: kramdown
 highlighter: rouge
